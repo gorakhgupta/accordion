@@ -11,3 +11,33 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.main_div{
+  width:100px;
+  height:100px;
+  color:red;
+  display: flex;
+}
+.main_div p{
+  width:20px;
+  height:10px;
+  padding: 0 50px;
+}
+.Mydata{
+  border:2px solid cyan;
+}
+@media(min-width:768px)
+{
+  .Mydata{
+    background-color: rgb(236, 236, 152);
+    position: relative;
+    left:500px;
+    top:0;
+  justify-content: center;
+    width:200px;
+    height:190px;
+    border:5px solid cyan;
+    border-bottom: 0;
+  }
+
+}

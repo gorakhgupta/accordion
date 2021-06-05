@@ -1,24 +1,29 @@
 import logo from './logo.svg';
 import './App.css';
+import {question} from './api';
+import { useEffect, useState } from 'react';
+import Myac from './Myac';
 
-function App() {
+function App() 
+
+{
+
+  const[curr,setCurr]= useState(question);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+<>
+<h1 style={{marginLeft:'470px'}}>This is API of Me 😄 <br/></h1>
+ {
+  
+  curr.map((ele)=>{
+    const {id} =ele;
+  return <Myac {...ele }/>
+  })
+  } 
+
+
+
+</>
   );
 }
 
