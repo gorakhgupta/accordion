@@ -39,5 +39,8 @@ code {
     border:5px solid cyan;
     border-bottom: 0;
   }
+  .head{
+    margin-left:470px;
+  }
 
 }

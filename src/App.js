@@ -4,6 +4,7 @@ import {question} from './api';
 import { useEffect, useState } from 'react';
 import Myac from './Myac';
 
+
 function App() 
 
 {
@@ -12,7 +13,7 @@ function App()
 
   return (
 <>
-<h1 style={{marginLeft:'470px'}}>This is API of Me 😄 <br/></h1>
+<h1 className="head" >Interview Question 😄 <br/></h1>
  {
   
   curr.map((ele)=>{
